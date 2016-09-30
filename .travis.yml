@@ -1,0 +1,15 @@
+language: go
+go:
+- '1.7'
+deploy:
+  provider: releases
+  api_key:
+    secure: JKCNx2rZrUx/0XJbid4S4cArlg0b9EME9wpgOPQUaNeSo1I7anLDM7d5I3Wr81Q/GZjFx/qsXRXnFmM/J2eaPEWlAHi39+qBi9dq87xXAGcTtvfIkeX8OaZ2ZKYrmhn7BfyEk71kQf3SSXqlfPcZj2JSa+PWTl0yYTOUzFfQ14WUWYho0vQeLIzuilJF+4EdCJ1Ob6gfuQ42HhJfMhcEreJpqKIRsfe6NyXgOliEHFIzxz7mXC1LxepeyWmKd+Y6PoOE8F2mMFqOMSSmHZh0FiKP5ybD6NzmI8H+ORf0TDqdT7OvSPp9vt/7NIClPV1NX3JaYMzXo4LT6XthL/yHoyVjlsqagjMGDzCrRjhlM5ccEtbypUOycyhc8Pr4NFBtUtqFty1671BW3E4ymSnIZbzwNFyiUBnhfy/cU/2mSOSjvMfD6a8bqLk4DB+pizKQkSRv0e0Rx3Qjy7kMxjGJipmDzl8ky/+GnEWuARSh2kEI9AKyHZ1ZCgghTGNGTGuBhAQ61HWXV6ZfXznxLm1KxGLeDiRzOZy8yc629b/x1fKBkvnjvhvb5yEpntrkdKI3Iv9JZiJz0B9VmX/XYwYnUqP/TJPHBOKxEnMzyKLG1NRx/i9BeOkyWzL/3Bi4MAwgQHsfaFgYxMnn/4FEJArkXh+2rWsPB7o80mMCFv1FUq8=
+  file:
+  - release/terraform-provider-amp-linux-amd64
+  - release/terraform-provider-amp-linux-386
+  - release/terraform-provider-amp-linux-arm
+  - release/terraform-provider-amp-darwin-amd64
+  on:
+    repo: lenfree/TERRAFORM-provider-amp
+    tags: true

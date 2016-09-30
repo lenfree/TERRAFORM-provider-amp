@@ -1,20 +1,10 @@
-.PHONY: all
-ifeq ($(ARCH), darwin)
-all: darwin
-else
-all: linux
-endif
+name = terraform-provider-amp
+package = github.com/lenfree/$(name)
 
-.PHONY: darwin
-darwin: dep
-	env GOOS=darwin GOARCH=amd64 go build -o terraform-provider-amp
-
-.PHONY: linux
-linux: dep
-	env GOOS=linux GOARCH=amd64 go build -o terraform-provider-amp
-
-.PHONY: dep
-dep:
-ifndef ARCH
-	$(error ARCH is not set)
-endif
+.PHONY: release
+release:
+mkdir -p release
+	GOOS=linux GOARCH=amd64 go build -o release/$(name)-linux-amd64 $(package)
+	GOOS=linux GOARCH=386 go build -o release/$(name)-linux-386 $(package)
+	GOOS=linux GOARCH=arm go build -o release/$(name)-linux-arm $(package)
+	GOOS=darwin GOARCH=amd64 go build -o release/$(name)-linux-darwin-amd64 $(package)
