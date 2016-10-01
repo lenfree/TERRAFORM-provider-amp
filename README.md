@@ -23,13 +23,6 @@ Requirement:
 # Make sure binary exists on project directory where you call
 `terraform apply`
 
-Build binary:
-
-```
-$ make ARCH=darwin
-```
-
-
 ## Contributing
 
 1. Fork it ( https://github.com/lenfree/vcenter-metrics?fork )
