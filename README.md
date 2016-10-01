@@ -9,6 +9,9 @@ requests if they belong to a same AWS Account ID.
 Moreover, as of this stage, only create resource has been
 implemented.
 
+Status: [![Build Status](https://travis-ci.org/lenfree/TERRAFORM-provider-amp.svg?branch=master)](https://travis-ci.org/lenfree/TERRAFORM-provider-amp)
+
+
 How to use this resource:
 
 ```
@@ -16,6 +19,12 @@ resource "amp_vpc_peering_accept_all" "mytest" {
   owner_id        = "<ACCOUNT-01"
   aws_account_ids = ["ACCOUNT-01", "ACCOUNT-02", "ACCOUNT-03"]
   aws_region      = "ap-southeast-2"
+```
+
+Binary release available:
+
+```
+https://github.com/lenfree/TERRAFORM-provider-amp/releases
 ```
 
 Requirement:
