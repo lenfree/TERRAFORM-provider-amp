@@ -13,6 +13,7 @@ deploy:
     - release/terraform-provider-amp-linux-386
     - release/terraform-provider-amp-linux-arm
     - release/terraform-provider-amp-darwin-amd64
+  skip_cleanup: true
   on:
     repo: lenfree/TERRAFORM-provider-amp
     tags: true
