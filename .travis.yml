@@ -4,12 +4,12 @@ go:
 deploy:
   provider: releases
   api_key:
-    secure: JKCNx2rZrUx/0XJbid4S4cArlg0b9EME9wpgOPQUaNeSo1I7anLDM7d5I3Wr81Q/GZjFx/qsXRXnFmM/J2eaPEWlAHi39+qBi9dq87xXAGcTtvfIkeX8OaZ2ZKYrmhn7BfyEk71kQf3SSXqlfPcZj2JSa+PWTl0yYTOUzFfQ14WUWYho0vQeLIzuilJF+4EdCJ1Ob6gfuQ42HhJfMhcEreJpqKIRsfe6NyXgOliEHFIzxz7mXC1LxepeyWmKd+Y6PoOE8F2mMFqOMSSmHZh0FiKP5ybD6NzmI8H+ORf0TDqdT7OvSPp9vt/7NIClPV1NX3JaYMzXo4LT6XthL/yHoyVjlsqagjMGDzCrRjhlM5ccEtbypUOycyhc8Pr4NFBtUtqFty1671BW3E4ymSnIZbzwNFyiUBnhfy/cU/2mSOSjvMfD6a8bqLk4DB+pizKQkSRv0e0Rx3Qjy7kMxjGJipmDzl8ky/+GnEWuARSh2kEI9AKyHZ1ZCgghTGNGTGuBhAQ61HWXV6ZfXznxLm1KxGLeDiRzOZy8yc629b/x1fKBkvnjvhvb5yEpntrkdKI3Iv9JZiJz0B9VmX/XYwYnUqP/TJPHBOKxEnMzyKLG1NRx/i9BeOkyWzL/3Bi4MAwgQHsfaFgYxMnn/4FEJArkXh+2rWsPB7o80mMCFv1FUq8=
+    secure: PcrghLCNaFw0zxOKv1UWjPdje6wqEjXi1Vh6yQiZIy44xMtLZOHS0i7TpUcFu9bZMlOwqmirHs/fEZ9MK5KTYOXC+PROHFdKM9mT91fs7TbTePw6hju9wt/fnk/ljnisnrO/RI6miCJSX8nzSzWs+fZi/2hhLFznMIyEZxtnYPflQ1eqdddWf8h/yrPMzC+MbSvbKUOoZvU2umrV9gKyxM5Mz/oGMcgI2mYM7xoaTtCT+VRTo9IY4lVjnKDfWGGlDVYJpgSTR33ZaVkUZgrjisk+6hHTBkRIpxzWBPjVfvJSyHvrtF1Qpz1PIzZukrEjk0vTAi1oIVx+x3gfnqFR9NPBvs61UZvAR0VMXw+P2D1+c5r77qryIxm0t3+pYTx/pt++ONCJ+tej4ORmKGUCtbQLIleBFRCZFGOlFtoG/PsrJNvwjjg46Md4VvfXmLlijam0ZL4H+yl9tq752syiHuwR4V/ZzM/wXfZZzwrCi4HBuVuUO651edjhvNzdXZuJqrle+h+z19o/czPQJjfNBukv3jxGpJyKsnHbIGdl6kR/4uROlwdhxoBmCBx0d91Pnh9Xvzf8yoUT21U6C39T5xN4tbaiDSrzYcK2eMFCkLm13QpuOzl8bylStEETzgSv2dxx1dotnmW07N4w6OespEFlTXXWZ+6Ej2J211GUu+w=
   file:
-  - release/terraform-provider-amp-linux-amd64
-  - release/terraform-provider-amp-linux-386
-  - release/terraform-provider-amp-linux-arm
-  - release/terraform-provider-amp-darwin-amd64
+    - release/terraform-provider-amp-linux-amd64
+    - release/terraform-provider-amp-linux-386
+    - release/terraform-provider-amp-linux-arm
+    - release/terraform-provider-amp-darwin-amd64
   on:
     repo: lenfree/TERRAFORM-provider-amp
     tags: true
