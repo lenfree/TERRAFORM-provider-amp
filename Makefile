@@ -1,5 +1,6 @@
-name = TERRAFORM-provider-amp
-package = github.com/lenfree/$(name)
+name = terraform-provider-amp
+project_name = TERRAFORM-provider-amp
+package = github.com/lenfree/$(project_name)
 
 .PHONY: release
 release:
